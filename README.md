@@ -1,7 +1,7 @@
 
 # Pello World
 
-pello world is a mobile application, developed using flutter mobile framework.
+pello world is a mobile application, developed using flutter, open source mobile SDK from google.
 
 ## Note: the project is at design stage. there are a lot of remaining works!!!
 
