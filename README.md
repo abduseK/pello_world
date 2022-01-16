@@ -3,6 +3,8 @@
 
 pello world is a mobile application, developed using flutter mobile framework.
 
+## Note: the project is at design stage. there are a lot works that remain!!!
+
 # Student Name: Abdelselam Kemal Adamo
 # Email: abdelselamkemal74@gmail.com
 
