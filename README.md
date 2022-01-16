@@ -18,6 +18,19 @@ Pello world is a platform designed for technology students to access the modules
 ## Documentation
 
 
+### Objectives
+
+      #### Most of the time, many students find it difficult to adapt to the curriculum though they have basic knowledge and understanding of it.
+      
+            - pello helps students to understand and grasp different concepts easly by providing them direct and exact materials
+            - to improve students result and their grade which is the greate differetiator when finding a job
+            - to increase the interest and excitment of the students in the learning process
+            - to support students hard working and effort
+            - to produce qualified technology students who carries the future of Ethiopia
+            
+          #### Generally, Pello makes the learning process easy and efficient.
+
+### Features
 
 Pello is designed mainly for Addis Ababa University Computer Science and Software Engineering students, which contains
       
@@ -34,6 +47,8 @@ In the future, the platform will have:
       - paid excercise and worksheets
       - paid sample projects and project consult service
       - tutor services as needed
+      
+
 
 It helps students by giving them important modules, lecturer notes and making them ready for the exams.
 The modules are officially approved by the teachers and the departments.
