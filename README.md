@@ -25,10 +25,10 @@ Pello world is a platform designed for technology students to access the modules
             - pello helps students to understand and grasp different concepts easly by providing them direct and exact materials
             - to improve students result and their grade, which is the greate differentiator during job application and finding process
             - to increase the interest and excitment of the students in the learning process
-            - to support students hard working and effort
+            - to support students hard work and effort
             - to produce qualified technology students who carries the future of Ethiopia
             
-It helps students by giving them important modules, lecturer notes and making them ready for the exams.
+It helps students by giving them important modules, lecturer notes and making them ready for exams.
             
 #### Generally, Pello makes the learning process easy and efficient.
 
@@ -50,13 +50,14 @@ In the future, the platform will have:
 
       - paid tutorial videos
       - paid excercises and worksheets
-      - paid sample projects and project consult service
+      - paid sample projects
+      - project consult service
       - tutor services as needed
       
 ##### Since communication is necessary to be successful, we will have a greate community sessions for experience sharing and communication. 
       
 
-The modules are officially approved by the teachers and the departments.
+The modules will be officially approved by the teachers and the departments.
 
 All resources that we use for the platform will be valid and legal.
 
