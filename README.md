@@ -1,7 +1,8 @@
 
 # Pello World
 
-pello world is a mobile application, developed using flutter, open source mobile SDK from google.
+Pello world is a platform designed for technology students to access the modules and project samples easly.
+
 
 ## Note: the project is at design stage. there are a lot of remaining works!!!
 
@@ -18,21 +19,26 @@ pello world is a mobile application, developed using flutter, open source mobile
 
 
 
-Pello is designed mainly for Addis Ababa University Computer Science students, which contains
+Pello is designed mainly for Addis Ababa University Computer Science and Software Engineering students, which contains
       
       - modules from all years
       - project samples
       - assignment and exam papers
       - worksheets
       - additional technology related books
-    
-It has mainly two sections, the home screen which is shown when the app is launch,
-the main page section which consists of modules, project samples and other features.
+     
+The resources will be provided for free until the the whole platform is completed.
+In the future, the platform will have:
+
+      - paid tutorial videos
+      - paid excercise and worksheets
+      - paid sample projects and project consult service
+      - tutor services as needed
 
 It helps students by giving them important modules, lecturer notes and making them ready for the exams.
-The modules are officially approved by the teachers and the department.
+The modules are officially approved by the teachers and the departments.
 
-All resources that used by the application are valid and legal.
+All resources that we use for the platform will be valid and legal.
 
 
 ## How to run the programm
