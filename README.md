@@ -3,6 +3,8 @@
 
 Pello world is a platform designed for technology students to access the modules, learning materials and project samples easly.
 
+### The Documentation is provided below!
+
 
 ## Note: the project is at design stage. there are a lot of remaining works!!!
 
