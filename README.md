@@ -6,9 +6,11 @@ Pello world is a platform designed for technology students to access the modules
 
 ## Note: the project is at design stage. there are a lot of remaining works!!!
 
-## Student Name: Abdelselam Kemal Adamo
-## Email: abdelselamkemal74@gmail.com
-## Phone: +251974766947
+## Student Information
+
+            - Student Name: Abdelselam Kemal Adamo
+            - Email: abdelselamkemal74@gmail.com
+            - Phone: +251974766947
 
 ## Author
 
