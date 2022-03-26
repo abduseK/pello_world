@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'pages/page1.dart';
+import 'package:hackathon_pro/pages/year_2/sem_one/pageTwo.dart';
+import 'package:hackathon_pro/pages/year_2/sem_one/pageThree.dart';
+
 
 
 class Body extends StatefulWidget {
@@ -63,8 +66,26 @@ class _BodyState extends State<Body> {
               ],
             ),
           ),
+          const SizedBox(height: 50.0,),
+
           Card(
-            elevation: 5,
+            child: ExpansionTile(
+            title: const Text('CS Year One',
+              style: TextStyle(
+                color: kTextColor
+              ),
+            ),
+
+            children: [
+              ExpansionTile(
+                title: const Text('                   Semester One',
+                style: TextStyle(
+                  color: kTextColor
+                ),
+                ),
+                children: [
+                  Card(
+            elevation: 0,
             color: kBackgroundColor,
             child: ListTile(
               title: const Text('C++',
@@ -84,62 +105,146 @@ class _BodyState extends State<Body> {
             ),
           ),
 
-          Card(
-            elevation: 5,
+                ],
+              ),
+
+              ExpansionTile(
+                title: const Text('                   Semester Two',
+                style: TextStyle(
+                  color: kTextColor
+                ),
+                ),
+                children: [
+                  Card(
+            elevation: 0,
             color: kBackgroundColor,
             child: ListTile(
-              title: const Text('Java',
+              title: const Text('C++',
               style: TextStyle(
                 fontFamily: kFamily,
                 color: kPrimaryColor
               ),),
-              subtitle: const Text('Learn Java in ease way',
+              subtitle: const Text('Learn C++ in ease way',
               style: TextStyle(
                 fontFamily: kFamily,
-                color: kPrimaryColor
+                color: kPrimaryColor,
               ),
               ),
-              onTap: () {},
-            )
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Page1()));
+              },
+            ),
           ),
 
-          Card(
+
+                ],
+              ),
+
+              
+            ],
+          ),
             elevation: 5,
             color: kBackgroundColor,
+          ),
+          const SizedBox(height: 10.0,),
+          Card(
+            child: ExpansionTile(
+            title: const Text('CS Year Two',
+              style: TextStyle(
+                color: kTextColor
+              ),
+            ),
+
+            children: [
+              ExpansionTile(
+                title: const Text('                   Semester One',
+                style: TextStyle(
+                  color: kTextColor
+                ),
+                ),
+                children: [
+                  Card(
+            elevation: 0,
+            color: kBackgroundColor,
             child: ListTile(
-              title: const Text('Flutter',
+              title: const Text('Programming Two',
               style: TextStyle(
                 fontFamily: kFamily,
                 color: kPrimaryColor
               ),),
-              subtitle: const Text('Learn Flutter in ease way',
+              subtitle: const Text('Learn C++ in ease way',
               style: TextStyle(
                 fontFamily: kFamily,
-                color: kPrimaryColor
+                color: kPrimaryColor,
               ),
               ),
-              onTap: () {},
-            )
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Page2()));
+              },
+            ),
           ),
 
-          Card(
-            elevation: 5,
+           Card(
+            elevation: 0,
             color: kBackgroundColor,
             child: ListTile(
-              title: const Text('Python',
+              title: const Text('Fundamentals of CS',
               style: TextStyle(
                 fontFamily: kFamily,
                 color: kPrimaryColor
               ),),
-              subtitle: const Text('Learn Python in ease way',
+              subtitle: const Text('Learn Fundamentals of CS in ease way',
+              style: TextStyle(
+                fontFamily: kFamily,
+                color: kPrimaryColor,
+              ),
+              ),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Page3()));
+              },
+            ),
+          ),
+
+                ],
+              ),
+
+              ExpansionTile(
+                title: const Text('                   Semester Two',
+                style: TextStyle(
+                  color: kTextColor
+                ),
+                ),
+                children: [
+                  Card(
+            elevation: 0,
+            color: kBackgroundColor,
+            child: ListTile(
+              title: const Text('C++',
               style: TextStyle(
                 fontFamily: kFamily,
                 color: kPrimaryColor
+              ),),
+              subtitle: const Text('Learn C++ in ease way',
+              style: TextStyle(
+                fontFamily: kFamily,
+                color: kPrimaryColor,
               ),
               ),
-              onTap: () {},
-            )
-          )
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Page1()));
+              },
+            ),
+          ),
+
+                ],
+              ),
+              
+            ],
+          ),
+            elevation: 5,
+            color: kBackgroundColor,
+          ),
+          
         ],
       ),
     );
