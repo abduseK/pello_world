@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
-import 'pages/page1.dart';
+import '../pages/page1.dart';
 import 'package:hackathon_pro/pages/year_2/sem_one/pageTwo.dart';
 import 'package:hackathon_pro/pages/year_2/sem_one/pageThree.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackathon_pro/home.dart';
+import 'package:hackathon_pro/components/home.dart';
 
 
 void main() {

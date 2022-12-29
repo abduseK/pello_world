@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:hackathon_pro/constants.dart';
-import 'package:hackathon_pro/files/year_two/sem1/Fund_CS.dart';
+import 'package:hackathon_pro/components/constants.dart';
+import 'package:hackathon_pro/files/year_two/sem1/fund_cs.dart';
 
 
 
