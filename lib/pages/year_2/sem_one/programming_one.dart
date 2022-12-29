@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:hackathon_pro/components/constants.dart';
-import 'package:hackathon_pro/files/year_two/sem1/program_one.dart';
+import 'package:hackathon_pro/files/year_two/sem1/programming_one.dart';
 
 
 
@@ -26,7 +26,7 @@ class _Page2State extends State<Page2> {
     return Scaffold(
       backgroundColor: kBackgroundColor,
       appBar: AppBar(
-        title: const Text('C++',
+        title: const Text('Programming One',
         style: TextStyle(
           fontFamily: "SassyFrass",
         ),

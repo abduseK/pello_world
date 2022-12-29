@@ -14,9 +14,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  final controller = PageController(
-    initialPage: 1,
-  );
+  final controller = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

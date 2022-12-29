@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import '../pages/page1.dart';
-import 'package:hackathon_pro/pages/year_2/sem_one/pageTwo.dart';
-import 'package:hackathon_pro/pages/year_2/sem_one/pageThree.dart';
+import 'package:hackathon_pro/pages/year_2/sem_one/programming_one.dart';
+import 'package:hackathon_pro/pages/year_2/sem_one/fundamentals_cs.dart';
 
 
 
@@ -167,7 +167,7 @@ class _BodyState extends State<Body> {
             elevation: 0,
             color: kBackgroundColor,
             child: ListTile(
-              title: const Text('Programming Two',
+              title: const Text('Programming One',
               style: TextStyle(
                 fontFamily: kFamily,
                 color: kPrimaryColor
