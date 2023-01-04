@@ -4,7 +4,6 @@ import 'constants.dart';
 import 'package:hackathon_pro/components/welcome_page.dart';
 
 
-
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
 

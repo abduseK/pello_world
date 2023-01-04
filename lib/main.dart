@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon_pro/components/home.dart';
+import 'auth_pages/login_pages.dart';
 
 
 void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Main(),
+      home: Main(), 
     )
   );
 }
@@ -18,7 +19,7 @@ class Main extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Login_Page(),
     );
   }
 }
