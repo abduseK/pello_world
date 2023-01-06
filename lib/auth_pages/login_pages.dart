@@ -15,140 +15,152 @@ class _Login_PageState extends State<Login_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[400],
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              children: [
-                const SizedBox(height: 50,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.baseline,
-                  textBaseline: TextBaseline.alphabetic,
-                  children: const [
-                    Text('P',
-                      style: TextStyle(
-                        color: kPrimaryColor,
-                        fontSize: 80,
-                        fontFamily: 'SassyFrass'
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/login2.png'),
+            fit: BoxFit.fill
+          )
+        ),
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: Center(
+              child: Column(
+                children: [
+                  const SizedBox(height: 75,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: const [
+                      Text('P',
+                        style: TextStyle(
+                          color: kBackgroundColor,
+                          fontSize: 80,
+                          fontFamily: 'SassyFrass'
+                        ),
+                      ),
+                      Text('ello',
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.teal,
+                          fontFamily: 'SassyFrass'
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(height: 20,),
+                  TextFieldWidget(
+                    hintText: 'email',
+                  ),
+                  const SizedBox(height: 10,),
+                  TextFieldWidget(
+                    hintText: 'password',
+                  ),
+                  const SizedBox(height: 10,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                         Text('Forgot password?',
+                          style: TextStyle(
+                            color: kBackgroundColor
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 40,),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 28.0),
+                      child: Container(
+                        height: 40,
+                        width: double.infinity,
+                        child: const Center(
+                          child: Text('Sign In',
+                            style: TextStyle(
+                              color: kBackgroundColor,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                        decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                          borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
                     ),
-                    Text('ello',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'SassyFrass'
-                      ),
-                    )
-                  ],
-                ),
-                const SizedBox(height: 20,),
-                TextFieldWidget(
-                  hintText: 'email',
-                ),
-                const SizedBox(height: 10,),
-                TextFieldWidget(
-                  hintText: 'password',
-                ),
-                const SizedBox(height: 4,),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
-                       Text('Forgot password?',
+                  ),
+                  const SizedBox(height: 30,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text('Don\'t have an account?',
                         style: TextStyle(
-                          color: kTextColor
+                          color: kBackgroundColor
+                        ),
+                      ),
+                      const SizedBox(width: 6,),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Register_Page()));
+                        },
+                        child: const Text('Register now',
+                          style: TextStyle(
+                            color: Colors.blue
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(height: 20,),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Divider(
+                          thickness: 0.5,
+                          color: Colors.grey[500],
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Text('Or sign with',
+                          style: TextStyle(
+                            color: kBackgroundColor
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Divider(
+                          thickness: 0.5,
+                          color: Colors.grey[500],
                         ),
                       ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 40,),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 28.0),
-                    child: Container(
-                      height: 40,
-                      width: double.infinity,
-                      child: const Center(
-                        child: Text('Sign In',
-                          style: TextStyle(
-                            color: kBackgroundColor,
-                            fontSize: 18,
-                          ),
+                  const SizedBox(height: 20,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset('images/google.png',
+                        height: 15,
+                      ),
+                      const SizedBox(width: 8,),
+                      const Text('Sign in with your google account',
+                        style: TextStyle(
+                          color: kBackgroundColor
                         ),
-                      ),
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        borderRadius: BorderRadius.circular(10)
-                      ),
-                    ),
+                      )
+                    ],
                   ),
-                ),
-                const SizedBox(height: 30,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text('Don\'t have an account ',
-                      style: TextStyle(
-                        color: kPrimaryColor
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => Register_Page()));
-                      },
-                      child: const Text('Register now',
-                        style: TextStyle(
-                          color: Colors.blue
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-                const SizedBox(height: 20,),
-                Row(
-                  children: const [
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Text('Or sign with',
-                        style: TextStyle(
-                          color: kPrimaryColor
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 20,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset('images/google.png',
-                      height: 15,
-                    ),
-                    const SizedBox(width: 5,),
-                    const Text('Sign in with your google account',
-                      style: TextStyle(
-                        color: kPrimaryColor
-                      ),
-                    )
-                  ],
-                ),
-                const SizedBox(height: 20,)
-              ],
+                  const SizedBox(height: 20,)
+                ],
+              ),
             ),
           ),
         ),
@@ -175,13 +187,13 @@ class TextFieldWidget extends StatelessWidget {
             ),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
-                borderSide: const BorderSide(color: Colors.grey)
+                borderSide: const BorderSide(color: Colors.teal)
             ),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide(color: Colors.white54)
             ),
-            fillColor: Colors.grey[400],
+            // fillColor: Colors.grey[400],
             filled: true
         ),
       ),
