@@ -11,6 +11,11 @@ class Register_Page extends StatefulWidget {
 }
 
 class _Login_PageState extends State<Register_Page> {
+
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,14 +63,20 @@ class _Login_PageState extends State<Register_Page> {
                   ),
                   const SizedBox(height: 20,),
                   ExtractedTextWidget(
+                    obscureText: false,
+                    controller: emailController,
                     hintText: 'email',
                   ),
                   const SizedBox(height: 10,),
                   ExtractedTextWidget(
+                    obscureText: true,
+                    controller: passwordController,
                     hintText: 'password',
                   ),
                   const SizedBox(height: 10,),
                   ExtractedTextWidget(
+                    obscureText: true,
+                    controller: confirmPasswordController,
                     hintText: 'confirm password',
                   ),
                   const SizedBox(height: 40,),

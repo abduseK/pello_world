@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'body.dart';
 import 'constants.dart';
 import 'package:hackathon_pro/components/welcome_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 
 class Home extends StatefulWidget {
@@ -29,6 +30,14 @@ class _HomeState extends State<Home> {
         fontFamily: "SassyFrass",
         fontWeight: FontWeight.bold
       ),),
+        actions: [
+          IconButton(
+            onPressed: () {
+              FirebaseAuth.instance.signOut();
+            },
+            icon: Icon(Icons.logout),
+          ),
+        ],
       ),
 
       drawer: Drawer(

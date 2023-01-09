@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544764610390",
+    "project_id": "pello-auth",
+    "storage_bucket": "pello-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544764610390:android:13c04128db2624361bf8f7",
+        "android_client_info": {
+          "package_name": "com.example.hackathon_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544764610390-6putu8uud4b62g8bsel8famvjdi3uvsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa3sgr9h8pXdrhEv_9UdlWrs9WByb7A2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544764610390-6putu8uud4b62g8bsel8famvjdi3uvsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

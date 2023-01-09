@@ -3,6 +3,7 @@ import 'package:hackathon_pro/auth_pages/text_widget.dart';
 import '../components/constants.dart';
 import 'registration_page.dart';
 import '../components/home.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login_Page extends StatefulWidget {
   const Login_Page({Key? key}) : super(key: key);
@@ -13,7 +14,43 @@ class Login_Page extends StatefulWidget {
 
 class _Login_PageState extends State<Login_Page> {
 
-  void signInUser() {}
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  void signInUser() async {
+
+    void errorMessage(String message) {
+      showDialog(context: context, builder: (context) {
+        return AlertDialog(
+          title: Text(message),
+        );
+      });
+    }
+    showDialog(context: context, builder: (context) {
+      return const Center(
+        child: CircularProgressIndicator(
+          color: Colors.teal,
+          backgroundColor: Colors.black12,
+        ),
+      );
+    });
+
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: emailController.text,
+      password: passwordController.text,
+      );
+      Navigator.pop(context);
+    } on FirebaseAuthException catch(e) {
+      Navigator.pop(context);
+      if(e.code == 'user-not-found') {
+        errorMessage(e.code);
+      } else if(e.code == 'wrong-password') {
+        errorMessage(e.code);
+      }
+    }
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +92,14 @@ class _Login_PageState extends State<Login_Page> {
                   ),
                   const SizedBox(height: 20,),
                   ExtractedTextWidget(
+                    controller: emailController,
+                    obscureText: false,
                     hintText: 'email',
                   ),
                   const SizedBox(height: 10,),
                   ExtractedTextWidget(
+                    controller: passwordController,
+                    obscureText: true,
                     hintText: 'password',
                   ),
                   const SizedBox(height: 10,),
@@ -77,9 +118,7 @@ class _Login_PageState extends State<Login_Page> {
                   ),
                   const SizedBox(height: 40,),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
-                    },
+                    onTap: signInUser,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 28.0),
                       child: Container(

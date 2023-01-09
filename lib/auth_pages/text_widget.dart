@@ -4,13 +4,21 @@ import 'package:flutter/material.dart';
 class ExtractedTextWidget extends StatelessWidget {
 
   final String hintText;
-  ExtractedTextWidget({required this.hintText});
+  final controller;
+  bool obscureText;
+  ExtractedTextWidget({required this.hintText, required this.controller, required this.obscureText});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: TextField(
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          color: Colors.white
+        ),
+        obscureText: obscureText,
+        controller: controller,
         decoration: InputDecoration(
             hintText: hintText,
             hintStyle: TextStyle(
@@ -24,8 +32,6 @@ class ExtractedTextWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: Colors.white54)
             ),
-            // fillColor: Colors.grey[400],
-            filled: true
         ),
       ),
     );
