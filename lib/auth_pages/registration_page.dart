@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon_pro/auth_pages/login_pages.dart';
+import 'package:hackathon_pro/auth_pages/text_widget.dart';
 import '../components/constants.dart';
 
 class Register_Page extends StatefulWidget {
@@ -56,15 +57,15 @@ class _Login_PageState extends State<Register_Page> {
                     ),
                   ),
                   const SizedBox(height: 20,),
-                  TextFieldWidget(
+                  ExtractedTextWidget(
                     hintText: 'email',
                   ),
                   const SizedBox(height: 10,),
-                  TextFieldWidget(
+                  ExtractedTextWidget(
                     hintText: 'password',
                   ),
                   const SizedBox(height: 10,),
-                  TextFieldWidget(
+                  ExtractedTextWidget(
                     hintText: 'confirm password',
                   ),
                   const SizedBox(height: 40,),
@@ -120,31 +121,3 @@ class _Login_PageState extends State<Register_Page> {
   }
 }
 
-class TextFieldWidget extends StatelessWidget {
-
-  final String hintText;
-  TextFieldWidget({required this.hintText});
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      child: TextField(
-        decoration: InputDecoration(
-            hintText: hintText,
-            hintStyle: TextStyle(
-              color: Colors.grey[500],
-            ),
-            enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: const BorderSide(color: Colors.teal)
-            ),
-            focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: BorderSide(color: Colors.white54)
-            ),
-            filled: true
-        ),
-      ),
-    );
-  }
-}
