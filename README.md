@@ -1,6 +1,9 @@
 
 # Pello World
 
+![photo_2023-01-06_11-15-29](https://user-images.githubusercontent.com/93039426/212272463-fb8538e1-7a34-4e98-9d9e-43f396d0da8a.jpg)
+![photo_2023-01-06_11-20-16](https://user-images.githubusercontent.com/93039426/212272490-a951a68e-ed5a-4db8-8d4e-81cf33583d0d.jpg)
+
 ![photo_2022-12-29_11-40-41](https://user-images.githubusercontent.com/93039426/209922080-bfb6e445-5d93-4f7d-bcbc-0a3d38942d04.jpg)![photo_2022-12-29_11-40-59](https://user-images.githubusercontent.com/93039426/209922132-778b5646-c9b0-4082-b7cf-79e426392c19.jpg)
 
 Pello world is a platform designed for technology students to access the modules, learning materials and project samples easly.
