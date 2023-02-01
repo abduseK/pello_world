@@ -13,12 +13,6 @@ Pello world is a platform designed for technology students to access the modules
 
 ## Note: the project is at design stage. there are a lot of remaining works!!!
 
-## Student Information
-
-            - Student Name: Abdelselam Kemal Adamo
-            - Email: abdelselamkemal74@gmail.com
-            - Phone: +251974766947
-
 ## Author
 
 - [@abduseK](https://www.github.com/abduseK)
@@ -70,10 +64,3 @@ The modules will be officially approved by the teachers and the departments.
 
 All resources that we use for the platform will be valid and legal.
 
-
-## How to run the programm
-
-The program can be run using emulators or physical mobile devices.
-
-- We need to have flutter installed and android sdk
-- We need to connect our project with the device(emulator or physical)
